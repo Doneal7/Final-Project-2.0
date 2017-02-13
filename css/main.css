@@ -1,0 +1,80 @@
+
+/**/
+/* *:before, *:after*/
+*{
+  text-align: center;
+  font-family: 'Algerian', sans-serif;
+  /*background: linear-gradient(#456456 , #434546, #fff);*/
+}
+/*HEADER WRAP*/
+.headwrap {
+    margin: auto;
+    padding: 0px 200px 300px 150px;
+    /*height: 425px;*/
+    background:url('../img/Floor1.jpg') no-repeat center;
+    background-size:contain;
+
+}
+
+/*Element Modifiers*/
+p {
+display:inline-flex;
+background-color:tomato;
+margin:auto;
+text-align: center;
+margin-top: 50px;
+}
+table {
+  max-width: 1076px;
+  margin: 50px auto;
+  text-align: center;
+}
+thead{
+  margin-bottom:25px;
+  padding-bottom:25px;
+  text-align:center;
+  text-decoration:underline;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+  font-weight: 300;
+  padding-right:25px;
+}
+
+/*Class and IDs*/
+.main-nav
+{
+display: inline-flex;;
+text-align: center;
+padding-top:25px;
+}
+.main-nav a
+{
+  padding-left:50px;
+  text-align: center;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+
+  {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
