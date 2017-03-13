@@ -4,13 +4,12 @@
 *{
   text-align: center;
   font-family:'Roboto', sans-serif;
-  /*background: linear-gradient(#456456 , #434546, #fff);*/
+  /*background-color:#b04030;*/
 }
 /*HEADER WRAP*/
 .headwrap {
     margin: auto;
     padding: 0px 200px 300px 150px;
-    /*height: 425px;*/
     background:url('../img/Floor1.jpg') no-repeat center;
     background-size:contain;
 }
@@ -26,7 +25,10 @@ padding-top:25px;
   padding-left:50px;
   text-align: center;
 }
-
+#dropdown
+{
+  display:inline-block;
+}
 /*Body Format*/
 #wrapcommand
 {
@@ -65,43 +67,30 @@ table {
   flex-direction: column;
 }
 thead{
-  /*margin-bottom:25px;*/
   padding-bottom:25px;
   text-align:center;
   text-decoration:underline;
 }
 
-th, td {
-  /*text-align: left;
-  padding: 20px;
-  font-weight: 300;
-  padding-right:25px;
-  margin-left: 4px;*/
-}
 th{
   padding-left:5px;
 }
 
 
 /*MEDIA QUERIES*/
-@media (max-width: 769px) {
-	.main-header,
-	.row {
-		width: 90%;
-		margin: 0 auto;
-	}
-	.tagline {
-		font-size: 1.4em;
-	}
-#desktopnav
-  {
-    display: none;
-  }
+
+@media (max-width:480px)
+{
+  #desktopnav
+    {
+      display: none;
+    }
   .column
-  {
-    display:flex;
-    flex-wrap: wrap;
-  }
+    {
+      display:flex;
+      flex-wrap: wrap;
+      margin-left: 10px;
+    }
 }
 @media (max-width: 560px) {
 	.main-header,
@@ -122,19 +111,7 @@ th{
     flex-wrap: wrap;
   }
 }
-@media (max-width:480px)
-{
-  #desktopnav
-    {
-      display: none;
-    }
-  .column
-    {
-      display:flex;
-      flex-wrap: wrap;
-      margin-left: 10px;
-    }
-}
+
 
 @media (max-width:650px)
 {
@@ -148,8 +125,31 @@ th{
       flex-wrap: wrap;
       margin-left: 10px;
     }
+
 }
-@media (min-width: 1025px) {
+@media (max-width: 769px)
+{
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+#desktopnav
+  {
+    display: none;
+  }
+  .column
+  {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+}
+@media (min-width: 770px)
+{
 	.main-header,
 	.row {
 		width: 80%;
@@ -158,4 +158,5 @@ th{
   #dropdown{
     display:none;
   }
+
 }
